@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    --white: #fff;
+    --pink: #f5c3ca;
+    --black:  #313131;
+}
+
+html,body {
+padding: 0;
+margin: 0;
+color: var(--black);
+text-align: center;
+background-image: url('https://images.velog.io/images/nsunny0908/post/e529fbe0-f0cb-4cca-b94a-5d13e6f83e7d/0H2IGAX.jpg');
+background-repeat: repeat;
+background-size: 1000px;
+}
+
+img {
+max-width: 100%;
+max-height: 100%;
+border: 0px;
+}
+
+a:link    {color:inherit;text-decoration:none;}
+a:visited {color:inherit;text-decoration:none;}
+a:active  {color:inherit;text-decoration:none;}
+a:hover   {color:inherit;text-decoration:none; position: relative; top: 2px; left: 2px;}
+
+.light {
+margin-top: -30px;
+left: 0;
+right: 0;
+margin: auto;
+width: 250px;
+}
+
+.light_ {
+width: 200px;
+position: relative;
+top: -20px;
+z-index: 1
+}
+
+
+.control {
+width: 40px;
+position: fixed;
+right: 50px;
+bottom: 50px;
+z-index: 999999;
+}
+
+.head {
+width: 350px;
+margin: 120px auto;
+font-family:  "Archivo Black", "noto sans kr", sans-serif;
+font-weight: 800;
+margin-top: -200px;
+position: relative;
+z-index: 3;
+}
+
+.title_ {
+width: 160px;
+background-color: var(--black);
+padding: 15px 30px;
+margin-top: 10px;
+}
+
+.contents {
+width: 680px;
+margin: auto;
+position: relative;
+z-index: 3;
+left:30px;
+}
+
+.c_title {
+height: 24px;
+color: var(--pink);
+padding: 0px;
+margin: 30px 0px 40px;
+text-align: left;
+}
+
+.f_list {
+float:left;
+margin-right: 25px;
+font-family:  "Archivo Black", "noto sans kr", sans-serif;
+font-weight: 800;
+z-index: 999;
+}
+
+
+.f_title {
+width: 250px;
+padding: 20px;
+background-color: var(--white);
+border: 3px solid var(--pink);
+text-align: left;
+font-size: 11pt;
+font-weight: bold;
+box-shadow: 5px 5px 0px 0px var(--pink);
+letter-spacing: -0.5px;
+}
+
+.f_name {
+width: 40px;
+padding: 13px;
+background-color: var(--pink);
+color: var(--white);
+text-align: center;
+font-size: 8pt;
+display: inline-block;
+position: relative;
+top: -25px;
+left: 125px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    background: var(--pink);
+}
+@media screen and (max-width: 830px) {
+
+
+.light {
+margin-top: -10px;
+width: 200px;
+}
+
+.light_ {
+width: 170px;
+position: relative;
+top: -10px;
+}
+
+.control {
+right: 40px;
+bottom: 40px;
+z-index: 999;
+}
+
+.head {
+width: 280px;
+margin: 120px auto;
+margin-top: -170px;
+}
+
+.title_ {
+width: 150px;
+background-color: var(--black);
+padding: 13px 20px;
+margin-top: 12px;
+}
+
+.buttons {
+    color: var(--pink);
+}
+
+.contents {
+width: 80%;
+max-width: 400px;
+position: relative;
+z-index: 3;
+left:0px;
+right:0;
+margin: auto;
+}
+
+.c_title {
+height: 20px;
+margin: 30px 0px 30px;
+}
+
+.f_list {
+float:none;
+}
+
+.f_title {
+width: 90%;
+padding: 20px 5%;
+background-color: var(--white);
+border: 3px solid var(--black);
+text-align: left;
+font-size: 10pt;
+font-weight: bold;
+box-shadow: 5px 5px 0px 0px var(--black);
+margin-bottom: -10px;
+letter-spacing: -0.5px;
+}
+
+.f_name {
+width: 40px;
+padding: 13px;
+background-color: var(--black);
+color: var(--white);
+text-align: center;
+font-size: 8pt;
+display: inline-block;
+position: relative;
+top: -10px;
+left: 120px;
+}
+
+.foot {
+width: 100%;
+padding: 15px 0px;
+margin-top: 40px;
+letter-spacing: -1px;
+}
+}
