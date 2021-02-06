@@ -1,0 +1,60 @@
+
+html {
+    --white: #fff;
+    --pink: #f5c3ca;
+    --black:  #313131;
+}
+
+.box {
+    background-color: var(--white);
+    border: 3px solid var(--black);
+    margin-bottom: 40px;
+}
+    
+.profile {
+    border: 3px solid var(--black);
+    float: left;
+    background-color: var(--white);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: -2px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.name {
+    font-family:  "Archivo Black", "noto sans kr", sans-serif;
+    font-weight: 800;
+    font-size: 13pt;
+    text-align: right;
+    padding: 15px;
+    letter-spacing: -0.5px;
+}
+    
+.profile-contents {
+    font-family: "noto sans kr", sans-serif;
+    font-size: 10pt;
+    float: left;
+    padding: 20px;
+    /* text-align: left; */
+}
+
+.balloon {  
+    position:relative; 
+    background:var(--pink); 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.balloon:after { 
+    border-top:0px solid transparent; 
+    border-left: 8px solid transparent; 
+    border-right: 8px solid transparent; 
+    border-bottom: 8px solid var(--pink); 
+    content:""; 
+    position:absolute;
+    top:-8px;
+    left:20px;  
+}

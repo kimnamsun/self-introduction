@@ -7,34 +7,39 @@ html {
 }
 
 html,body {
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
-background: #000; /* Old browsers */
-text-align: center;
-overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--black); /* Old browsers */
+    text-align: center;
+    overflow: auto;
+}
+
+body {
+    font-family: 'Archivo Black';
+    color: var(--black);
 }
 
 .bg {
-width: 90%;
-height: 94%;
-background-image: url('../images/pink-background.jpg');
-background-size: cover;
-padding: 1px;
-position: fixed;
-top: 3%;
-left: 0;
-right: 0;
-margin: auto;
-border-radius: 30px;
-z-index: 1;
-overflow: auto;
+    width: 90%;
+    height: 94%;
+    background-image: url('../images/pink-background.jpg');
+    background-size: cover;
+    padding: 1px;
+    position: fixed;
+    top: 3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    z-index: 1;
+    overflow: auto;
 }
 
 img {
-max-width: 95%;
-border: 0px;
+    max-width: 95%;
+    border: 0px;
 }
 
 a:link    {color:inherit;text-decoration:none;}
@@ -42,48 +47,45 @@ a:visited {color:inherit;text-decoration:none;}
 a:active  {color:inherit;text-decoration:none;}
 a:hover   {color:inherit;text-decoration:none;}
 
-.contents{
-width: 400px;
-margin: auto;
-text-align: center;
-position:relative; 
-z-index: 2;}
+.contents {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    position:relative; 
+    z-index: 2;
+}
 
 .head {
-width: 200px;
-font-family: 'Archivo Black';
-font-size: 20px;
-letter-spacing: -0.2px;
-margin: auto;
-padding: 100px 0px 80px;
+    width: 200px;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    margin: auto;
+    padding: 100px 0px 80px;
 }
 
 .head img {
-width: 110px;
-animation: mov1 3s infinite;
--webkit-animation: mov1 3s infinite;
-margin-bottom: 25px;
+    width: 110px;
+    animation: mov 3s infinite;
+    -webkit-animation: mov 3s infinite;
+    margin-bottom: 25px;
 }
 
 .num {
-width: 30px;
-height: 30px;
-line-height: 30px;
-font-family: 'Archivo Black';
-border: 2px solid black;
-background-color: white;
-border-radius: 50%;
-display: block;
-margin: -55px auto 20px;
-z-index: 9999;
-position: relative;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Archivo Black';
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    border-radius: 50%;
+    display: block;
+    margin: -55px auto 20px;
+    z-index: 9999;
+    position: relative;
 }
-
-.f_list {
-    float:none;
-    }
     
-    .f_title {
+.list {
     width: 90%;
     padding: 20px 5%;
     background-color: var(--white);
@@ -94,101 +96,104 @@ position: relative;
     box-shadow: 5px 5px 0px 0px var(--black);
     margin-bottom: 20px;
     letter-spacing: -0.5px;
-    }
-    
+}
 
+.list:hover {
+    cursor: pointer;
+}
+    
 .foot {
-width: 100%;
-text-align: center;
-z-index: 2;
-padding: 50px 0px 70px;
+    font-family:  "open sans", "noto sans kr", sans-serif;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 70px 0px 70px;
 }
 
 .back {
-position: fixed;
-line-height: 100%;
-left: 8%;
-top: 60px;
-font-size: 16px;
-z-index: 999;
+    position: fixed;
+    line-height: 100%;
+    left: 8%;
+    top: 60px;
+    font-size: 16px;
+    z-index: 999;
 } 
 
-@keyframes mov1 {
-0% {transform:scale(1);}
-50% {transform:scale(1.3);}
-99% {transform:scale(1);}
+@keyframes mov {
+    0% {transform:scale(1);}
+    50% {transform:scale(1.3);}
+    99% {transform:scale(1);}
 }
 
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-    background: #000;
+    background: var(--black);
 }
 
 ::-webkit-scrollbar-thumb {
     width: 5px;
-    background: #fff;
+    background: var(--pink);
 }
 
 @media screen and (max-width: 830px) {
 
+    .bg {
+        width: 90%;
+        height: 94%;
+        background-image: url('../images/pink-background.jpg');
+        background-size: cover;
+        padding: 1px;
+        position: fixed;
+        top: 3%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 30px;
+        z-index: 1;
+    }
 
-.bg {
-width: 90%;
-height: 94%;
-background-image: url('../images/pink-background.jpg');
-background-size: cover;
-padding: 1px;
-position: fixed;
-top: 3%;
-left: 0;
-right: 0;
-margin: auto;
-border-radius: 30px;
-z-index: 1;
-}
+    .contents {
+        width: 78%;
+    }
 
-.contents{
-width: 78%;}
+    .head {
+        width: 150px;
+        font-family: 'Archivo Black';
+        font-size: 18px;
+        letter-spacing: -0.2px;
+        margin: auto;
+        padding: 100px 0px 80px;
+    }
 
-.head {
-width: 150px;
-font-family: 'Archivo Black';
-font-size: 18px;
-letter-spacing: -0.2px;
-margin: auto;
-padding: 100px 0px 80px;
-}
+    .head img {
+        width: 70px;
+        animation: mov 3s infinite;
+        -webkit-animation: mov 3s infinite;
+        margin-bottom: 25px;
+    }
 
-.head img {
-width: 70px;
-animation: mov1 3s infinite;
--webkit-animation: mov1 3s infinite;
-margin-bottom: 25px;
-}
+    .num {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-family: 'Archivo Black';
+        border: 2px solid var(--black);
+        background-color: var(--white);
+        border-radius: 50%;
+        display: block;
+        margin: -55px auto 20px;
+        z-index: 9999;
+        position: relative;
+    }
 
-.num {
-width: 25px;
-height: 25px;
-line-height: 25px;
-font-family: 'Archivo Black';
-border: 2px solid black;
-background-color: white;
-border-radius: 50%;
-display: block;
-margin: -55px auto 20px;
-z-index: 9999;
-position: relative;
-}
-
-
-.back {
-position: fixed;
-line-height: 100%;
-left: 50px;
-top: 50px;
-font-size: 16px;
-z-index: 999;
-} 
-
+    .back {
+        position: fixed;
+        line-height: 100%;
+        left: 50px;
+        top: 50px;
+        font-size: 16px;
+        z-index: 999;
+    } 
 }
