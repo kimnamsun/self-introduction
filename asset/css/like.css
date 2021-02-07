@@ -11,7 +11,7 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background: var(--black); /* Old browsers */
+    background-image: url('../images/black-background.jpg');
     text-align: center;
     overflow: auto;
 }
