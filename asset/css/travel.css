@@ -20,6 +20,7 @@
 }
 
 .thum:hover {
+    cursor: pointer;
     filter: grayscale(60%);
     transition: .3s ease-in-out;
 }

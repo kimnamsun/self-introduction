@@ -83,5 +83,10 @@
     <div class="foot">COPYRIGHT ⓒ 2021 NAMSUN ALL RIGHTS RESERVED.</div>
     </div>
 </body>
-
+<script>
+    const img = document.getElementsByTagName("img");
+    for (var x = 0; x < img.length; x++) {
+      img.item(x).onclick = function() {window.open(this.src.split('=')[1])}; 
+    }
+</script>
 </html>
