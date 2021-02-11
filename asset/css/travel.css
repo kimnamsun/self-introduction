@@ -1,4 +1,4 @@
-.f_list {
+.t_list {
     width: 31%;
     float: left;
     margin-right: 2%;
@@ -25,7 +25,7 @@
     transition: .3s ease-in-out;
 }
 
-.f1 {
+.country {
     font-size: 8pt;
     display: inline-block;
     color: var(--black);
@@ -34,7 +34,7 @@
     opacity: 0;
 }
 
-.thum:hover + .f1 {
+.thum:hover + .country {
     opacity: 1;
 }
 
