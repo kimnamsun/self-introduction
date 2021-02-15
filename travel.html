@@ -17,13 +17,12 @@
     </a>
     <div class="bg">
         <div class="contents">
-            <div id="top"></div>
-            <a href="#top">
+            <a href="#head">
                 <div class="control_bar">
                     <i class="fa fa-angle-up"></i>
                 </div>
             </a>
-            <div class="head">
+            <div class="head" id="head">
                 <img src="asset/images/travel.png"><br>
                 <div class="num">3</div>
                 TRAVEL
@@ -81,10 +80,4 @@
     <div class="foot">COPYRIGHT ⓒ 2021 NAMSUN ALL RIGHTS RESERVED.</div>
     </div>
 </body>
-<script>
-    const img = document.getElementsByTagName("img");
-    for (var x = 0; x < img.length; x++) {
-      img.item(x).onclick = function() {window.open(this.src.split('=')[1])}; 
-    }
-</script>
 </html>
