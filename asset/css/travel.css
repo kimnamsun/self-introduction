@@ -42,3 +42,12 @@
 .contents {
     width: 600px;
 }
+
+@media screen and (max-width: 830px) {
+
+    .t_list {
+        width: 46%;
+        margin-right: 4%;
+    }
+}
+
